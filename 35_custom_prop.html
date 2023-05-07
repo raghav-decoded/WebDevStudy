@@ -1,0 +1,54 @@
+<!-- 
+    Variables/Custom Properties CSS
+    
+    :root{}
+        Used to declare global variables in CSS
+    A variable declared inside a selector{} has local scope{}
+    Declaring and Initializing a variable
+        --name: value;
+    Using a variable
+        var(--name);
+    Changes get reflected in the entire stylesheet
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Variables/Custom Properties</title>
+    <style>
+        :root{
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+        .box{
+            width:200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+        .container{ 
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

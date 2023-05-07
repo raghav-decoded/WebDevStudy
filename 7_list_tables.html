@@ -1,0 +1,91 @@
+<!--
+    Lists and Tables in HTML
+    li element = list item
+    ul = Unordered List
+        attribute:
+            type: circle square disc 
+    ol = Ordered List
+        attribute:
+            type: a 1 I A ...
+    Nested lists are possible
+
+    table element:
+        thead: Table head
+        tr: 1 Row
+        th: Data in one block of head
+        td: Data in one block of row
+        tbody: Table Body
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lists and Tables</title>
+</head>
+
+<body>
+    <!-- Unordered List -->
+    <!-- type attribute = circle,square, disc-->
+    <ul type="circle">
+        <!-- li tag = list items-->
+        <li>This is first item of my unordered list</li>
+        <li>This is second item of my unordered list</li>
+        <!-- Nested list-->
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+
+        <li>This is third item of my unordered list</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <!-- type attribute = a, 1 , I etc.-->
+    <ol type="a">
+        <li>This is first item of my ordered list</li>
+        <li>This is second item of my ordered list</li>
+        <li>This is third item of my ordered list</li>
+    </ol>
+
+    <h3>HTML Table</h3>
+    <!-- Tables -->
+    <table>
+        <!-- Table Head -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <td> Madhav </td>
+                <td> 34343 </td>
+                <td> Programmer </td>
+            </tr>
+            <!-- Row 2 -->
+            <tr>
+                <td> Rohan Das</td>
+                <td> 3483 </td>
+                <td> HTML Expert </td>
+            </tr>
+            <!-- Row 3 -->
+            <tr>
+                <td> Gauri Shankar </td>
+                <td> 7564 </td>
+                <td> Android Developer </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

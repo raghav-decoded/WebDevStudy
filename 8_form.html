@@ -1,0 +1,115 @@
+<!--
+    Forms in HTML
+        form element
+            attribute: action
+        label element
+            attribute: for name
+        div element
+
+
+        input element:
+            attribute:
+            name
+            placeholder
+            type: text number email date checkbox(checked default) date radio submit reset
+            id: name of variable/identifier
+        
+        textarea element:
+            attribute: name rows cols
+
+        select element:
+            attribute: name id
+        option element:
+            attribute: value selected(default)
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <!-- PHP Backend receives the form -->
+    <form action="backend.php">
+        <!-- label tag helps to make labels: Clicking on the label affects the input. for(label) == id(input) -->
+        <label for="name"> Name</label>
+        <!-- div tag : Provides division between different items -->
+        <div>
+            <!-- Text Input -->
+            <input type="text" name="myName" id="name" placeholder="Enter name">
+        </div>
+        <br>
+
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+
+        <div>
+            <!-- Email input -->
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+
+        <div>
+            <!-- Date Input -->
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+
+        <div>
+            <!-- Number input, accepts character 'e'=10^ -->
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+
+        <div>
+            <!-- Checkbox input -->
+            <!-- checked = checked by default -->
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+
+        <div>
+            <!-- Radio input -->
+            Gender:
+            Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <div>
+            <!-- textarea -->
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car</label>
+            <!-- select tag provides a list of items -->
+            <!-- option tag keeps an option -->
+            <!-- selected = default option -->
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <!-- Submit input -->
+            <!-- Reset input -->
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

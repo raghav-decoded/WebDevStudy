@@ -1,0 +1,70 @@
+<!-- Responsive Websites in CSS
+        A responsive website adapts to different resolutions
+        https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+ 
+    Ways to achieve a responsive website:
+        Viewports
+        max-width/max-height
+        CSS media Queries
+        rem/em/vh/vw
+        
+        em
+            element takes size relative to the parent container
+        rem
+            element takes size relative to html(root element) 
+        vh
+            element takes 'number' percent of the height
+        vw
+            element takes 'number' percent of the width
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            width: 400px;
+            /* height: 344px; */
+            height: 100vh;
+            width: 100vw;
+            font-size: 10px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* Relative to parent container */
+            font-size: 3em;
+             /* Relative to content(font)  */
+            padding: 3em; 
+        }
+
+        #second {
+            /* Relative to html */
+            font-size: 3rem;
+            /* Relative to html */
+            padding: 3rem; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+
+</html>
